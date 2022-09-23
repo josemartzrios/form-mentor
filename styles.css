@@ -12,10 +12,13 @@ html {
 
 html, body {
     min-height: 100%;
+    max-width: 100%;
 }
 
 .cards-container{
-    background-color: blueviolet;
+    background-image: url('./images/bg-main-mobile.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
     height: 40vh;
 }
 
@@ -30,5 +33,13 @@ html, body {
 .cards-container img:nth-child(2){
     position: absolute;
     top: 140px;
-    left: 10px;
+    left: 20px;
+}
+
+.form-container{
+    border: 3px solid rebeccapurple;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 30vh;
 }

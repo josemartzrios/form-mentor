@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title>Form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
@@ -17,6 +17,23 @@
     <img src="./images/bg-card-back.png" alt="credit card">
     <img src="./images/bg-card-front.png" alt="front-card">
   </header>
+
+  <form action="/" class="form-container">
+    <label for="" >Propietario de la tarjeta</label>
+    <input type="text" placeholder="Juan Pérez" required><br>
+    
+    <label for="">Número de la tarjeta</label>
+    <input type="number" placeholder="1243 2333 2321 0000" maxlength="16" required><br>
+    
+    <label for="">Fecha de expiración (MM/YY)</label>
+    <input type="number" min="2" max="2" placeholder="09" required>
+    <input type="number" min="2" max="2" placeholder="24" required>
+    
+    <label for="">CVC</label>
+    <input type="number" min="3" max="3" placeholder="131" required><br>
+
+    <button>Confirmar</button>
+  </form>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
